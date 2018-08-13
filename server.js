@@ -8,6 +8,9 @@ const manifest = {
   connections: [{
     host: Config[env].server.api.host,
     port: Config[env].server.api.port,
+    routes: {
+      cors: true
+    },
     labels: ['api']
   }],
   registrations: [{
@@ -31,8 +34,8 @@ Glue.compose(manifest, options, function(err, server) {
   if (err) {
     throw err;
   }
-
-  server.start(function() {
+  server.start(function(err) {
+    if (err) throw err;
     console.log('Hapi days!');
   });
 });
