@@ -1,0 +1,3 @@
+[submodule "servers/api"]
+	path = servers/api
+	url = git@gitlab.com:kitcode/kitcode-server
