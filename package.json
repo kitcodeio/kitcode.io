@@ -4,11 +4,21 @@
   "description": "this code powers kitcode.io platform",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "Satnam Singh",
   "license": "ISC",
   "dependencies": {
     "glue": "^4.1.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/kitcode/kitcode.io.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/kitcode/kitcode.io/issues"
+  },
+  "homepage": "https://gitlab.com/kitcode/kitcode.io#README"
 }
