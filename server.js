@@ -1,7 +1,5 @@
 const Glue = require('glue');
-
-const Config = require("./config.json");
-
+const Config = require("./config/config.json");
 const env = process.env.NODE_ENV || 'staging';
 
 const manifest = {
