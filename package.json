@@ -12,7 +12,10 @@
   "dependencies": {
     "glue": "^4.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-git": "^2.8.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@gitlab.com/kitcode/kitcode.io.git"
