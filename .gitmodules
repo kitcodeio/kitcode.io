@@ -1,6 +1,6 @@
 [submodule "servers/api"]
 	path = servers/api
-	url = git@gitlab.com:kitcode/kitcode-server
+	url = git@gitlab.com:kitcode/api.git
 [submodule "servers/web/angular6"]
-	path = servers/web/angular6
-	url = git@gitlab.com:kitcode/kitcode-frontend.git
+	path = servers/web
+	url = git@gitlab.com:kitcode/web.git
