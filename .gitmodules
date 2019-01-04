@@ -4,3 +4,6 @@
 [submodule "servers/web"]
 	path = servers/web
 	url = git@gitlab.com:kitcode/web.git
+[submodule "servers/run"]
+	path = servers/run
+	url = git@gitlab.com:kitcode/run.git
