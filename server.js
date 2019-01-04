@@ -17,6 +17,13 @@ const manifest = {
       cors: true
     },
     labels: ['api']
+  }, {
+    host: Config[env].server.run.host,
+    port: Config[env].server.run.port,
+    routes: {
+      cors: true
+    },
+    labels: ['run']
   }],
   registrations: [{
     plugin: {
@@ -37,6 +44,16 @@ const manifest = {
     },
     options: {
       select: ['api']
+    }
+  }, {
+    plugin: {
+      register: './servers/run',
+      options: {
+        config: Config[env]
+      }
+    },
+    options: {
+      select: ['run']
     }
   }]
 };
