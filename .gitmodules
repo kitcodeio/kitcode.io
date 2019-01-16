@@ -7,3 +7,6 @@
 [submodule "servers/run"]
 	path = servers/run
 	url = git@gitlab.com:kitcode/run.git
+[submodule "kide"]
+	path = kide
+	url = git@gitlab.com:kitcode/kide.git
