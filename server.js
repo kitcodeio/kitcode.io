@@ -1,25 +1,24 @@
 const Glue = require('glue');
 const Config = require("./config/config.json");
-const env = process.env.NODE_ENV || 'beta';
 
 const manifest = {
   connections: [{
-    host: Config[env].server.web.host,
-    port: Config[env].server.web.port,
+    host: Config.server.web.host,
+    port: Config.server.web.port,
     routes: {
       cors: true
     },
     labels: ['web']
   }, {
-    host: Config[env].server.api.host,
-    port: Config[env].server.api.port,
+    host: Config.server.api.host,
+    port: Config.server.api.port,
     routes: {
       cors: true
     },
     labels: ['api']
   }, {
-    host: Config[env].server.run.host,
-    port: Config[env].server.run.port,
+    host: Config.server.run.host,
+    port: Config.server.run.port,
     routes: {
       cors: true
     },
@@ -29,7 +28,7 @@ const manifest = {
     plugin: {
       register: './servers/web',
       options: {
-        config: Config[env]
+        config: Config
       }
     },
     options: {
@@ -39,7 +38,7 @@ const manifest = {
     plugin: {
       register: './servers/api',
       options: {
-        config: Config[env]
+        config: Config
       }
     },
     options: {
@@ -49,7 +48,7 @@ const manifest = {
     plugin: {
       register: './servers/run',
       options: {
-        config: Config[env]
+        config: Config
       }
     },
     options: {
