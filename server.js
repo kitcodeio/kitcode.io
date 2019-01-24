@@ -1,5 +1,8 @@
 const Glue = require('glue');
 const Config = require("./config/config.json");
+const env = require("./.env.json").env;
+
+Config.db = Config.db[env];
 
 const manifest = {
   connections: [{
