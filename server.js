@@ -1,6 +1,14 @@
 const Glue = require('glue');
 const Config = require("./config/config.json");
-const env = require("./.env.json").env;
+
+let env;
+
+try {
+  env = require("./.env.local.json").env;
+} catch(err) {
+  let help = ['.env.local.json not found', 'create .env.local.json and set your enviroment', ''];
+  throw new Error(help.join('\n'))
+}
 
 Config.db = Config.db[env];
 
