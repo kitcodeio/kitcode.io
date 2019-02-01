@@ -9,7 +9,7 @@
 	url = git@gitlab.com:kitcode/run.git
 [submodule "servers/kide"]
 	path = servers/kide
-	url = git@gitlab.com:satnam-sandhu/kide.git
+	url = git@gitlab.com:kitcode/kide.git
 [submodule "servers/kide-dist"]
 	path = servers/kide-dist
 	url = git@gitlab.com:kitcode/kide-dist.git
