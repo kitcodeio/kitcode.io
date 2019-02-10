@@ -3,6 +3,7 @@ const Config = require("./config/config.json");
 const env = require("./.env.json").env;
 
 Config.db = Config.db[env];
+Confid.kide.path = path.join(__dirname, 'servers/kide/build');
 
 const manifest = {
   connections: [{
