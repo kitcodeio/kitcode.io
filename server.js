@@ -11,7 +11,6 @@ try {
 }
 
 Config.db = Config.db[env];
-Confid.kide.path = path.join(__dirname, 'servers/kide/build');
 
 const manifest = {
   connections: [{
