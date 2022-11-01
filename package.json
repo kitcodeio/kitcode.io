@@ -13,7 +13,7 @@
     "glue": "^4.1.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-git": "^2.8.0"
   },
   "repository": {
